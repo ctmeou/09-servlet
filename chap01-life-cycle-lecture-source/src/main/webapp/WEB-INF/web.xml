@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- Servlet 등록 -->
+    <servlet>
+        <servlet-name>xmlmapping</servlet-name>
+        <servlet-class>com.ohgiraffers.section01.xml.LifeCycleTest</servlet-class>
+        <load-on-startup>100</load-on-startup>
+
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>xmlmapping</servlet-name>
+        <url-pattern>/xml-lifecycle</url-pattern>
+    </servlet-mapping>
+</web-app>
